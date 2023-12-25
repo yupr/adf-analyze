@@ -1,8 +1,5 @@
 #! /usr/bin/env python
 
-# run script
-# poetry run python src/analyze.py
-
 import pandas as pd
 from statsmodels.tsa.stattools import adfuller
 import matplotlib.pyplot as plt
@@ -16,6 +13,7 @@ afterData["date"] = pd.to_datetime(afterData["date"])
 # 指定した列をindexに割り当て、昇順にソート
 beforeData = beforeData.set_index(["date"]).sort_index(ascending=True)
 afterData = afterData.set_index(["date"]).sort_index(ascending=True)
+
 
 # ADF検定
 def checkAdf(fileName: str, data: pd.DataFrame):
