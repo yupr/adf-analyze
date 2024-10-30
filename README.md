@@ -11,13 +11,12 @@
 - python
 
 ### パッケージ管理
-  - poetry
+- poetry
 
 ### その他分析用のライブラリ
 - adfuller
 - pandas
 - matplotlib.pyplot
-
 
 ---
 
